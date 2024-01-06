@@ -418,16 +418,19 @@ extern const u32 gBattleTerrainTilemap_TallGrass[];
 extern const u32 gBattleTerrainAnimTiles_TallGrass[];
 extern const u32 gBattleTerrainAnimTilemap_TallGrass[];
 extern const u32 gBattleTerrainPalette_TallGrass[];
+extern const u32 gBattleTerrainPalette_TallGrass_Night[];
 extern const u32 gBattleTerrainTiles_LongGrass[];
 extern const u32 gBattleTerrainTilemap_LongGrass[];
 extern const u32 gBattleTerrainAnimTiles_LongGrass[];
 extern const u32 gBattleTerrainAnimTilemap_LongGrass[];
 extern const u32 gBattleTerrainPalette_LongGrass[];
+extern const u32 gBattleTerrainPalette_LongGrass_Night[];
 extern const u32 gBattleTerrainTiles_Sand[];
 extern const u32 gBattleTerrainTilemap_Sand[];
 extern const u32 gBattleTerrainAnimTiles_Sand[];
 extern const u32 gBattleTerrainAnimTilemap_Sand[];
 extern const u32 gBattleTerrainPalette_Sand[];
+extern const u32 gBattleTerrainPalette_Sand_Night[];
 extern const u32 gBattleTerrainTiles_Underwater[];
 extern const u32 gBattleTerrainTilemap_Underwater[];
 extern const u32 gBattleTerrainAnimTiles_Underwater[];
@@ -438,16 +441,20 @@ extern const u32 gBattleTerrainTilemap_Water[];
 extern const u32 gBattleTerrainAnimTiles_Water[];
 extern const u32 gBattleTerrainAnimTilemap_Water[];
 extern const u32 gBattleTerrainPalette_Water[];
+extern const u32 gBattleTerrainPalette_Water_Night[];
 extern const u32 gBattleTerrainTiles_PondWater[];
 extern const u32 gBattleTerrainTilemap_PondWater[];
 extern const u32 gBattleTerrainAnimTiles_PondWater[];
 extern const u32 gBattleTerrainAnimTilemap_PondWater[];
 extern const u32 gBattleTerrainPalette_PondWater[];
+extern const u32 gBattleTerrainPalette_PondWater_Night[];
+extern const u32 gBattleTerrainPalette_PondWater_Cave[];
 extern const u32 gBattleTerrainTiles_Rock[];
 extern const u32 gBattleTerrainTilemap_Rock[];
 extern const u32 gBattleTerrainAnimTiles_Rock[];
 extern const u32 gBattleTerrainAnimTilemap_Rock[];
 extern const u32 gBattleTerrainPalette_Rock[];
+extern const u32 gBattleTerrainPalette_Rock_Night[];
 extern const u32 gBattleTerrainTiles_Cave[];
 extern const u32 gBattleTerrainTilemap_Cave[];
 extern const u32 gBattleTerrainAnimTiles_Cave[];
@@ -459,6 +466,7 @@ extern const u32 gBattleTerrainAnimTiles_Building[];
 extern const u32 gBattleTerrainAnimTilemap_Building[];
 extern const u32 gBattleTerrainPalette_Building[];
 extern const u32 gBattleTerrainPalette_Plain[];
+extern const u32 gBattleTerrainPalette_Plain_Night[];
 extern const u32 gBattleTerrainPalette_Frontier[];
 extern const u32 gBattleTerrainTiles_Stadium[];
 extern const u32 gBattleTerrainTilemap_Stadium[];
@@ -467,6 +475,7 @@ extern const u32 gBattleTerrainTilemap_Rayquaza[];
 extern const u32 gBattleTerrainAnimTiles_Rayquaza[];
 extern const u32 gBattleTerrainAnimTilemap_Rayquaza[];
 extern const u32 gBattleTerrainPalette_Rayquaza[];
+extern const u32 gBattleTerrainPalette_Rayquaza_Night[];
 extern const u32 gBattleTerrainPalette_Kyogre[];
 extern const u32 gBattleTerrainPalette_Groudon[];
 extern const u32 gBattleTerrainPalette_BuildingGym[];
@@ -479,7 +488,7 @@ extern const u32 gBattleTerrainPalette_StadiumGlacia[];
 extern const u32 gBattleTerrainPalette_StadiumDrake[];
 extern const u32 gBattleTerrainPalette_StadiumWallace[];
 
-// pokedex
+// Pokédex
 extern const u32 gPokedexInterface_Gfx[];
 extern const u16 gPokedexBgHoenn_Pal[];
 extern const u32 gPokedexMenu_Gfx[];
@@ -2110,7 +2119,7 @@ extern const u32 gBerryPalette_Rowap[];
 extern const u32 gBerryPalette_Kee[];
 extern const u32 gBerryPalette_Maranga[];
 
-//pokenav
+//PokéNav
 extern const u16 gPokenavCondition_Pal[];
 extern const u32 gPokenavCondition_Gfx[];
 extern const u32 gPokenavCondition_Tilemap[];
@@ -3336,7 +3345,7 @@ extern const u32 gBattleAnimBgTilemap_Rainbow[];
 extern const u32 gPokedexAreaScreenAreaUnknown_Gfx[];
 extern const u16 gPokedexAreaScreenAreaUnknown_Pal[];
 
-// Pokemon Storage System
+// Pokémon Storage System
 extern const u32 gStorageSystemMenu_Gfx[];
 extern const u16 gStorageSystemPartyMenu_Pal[];
 extern const u32 gStorageSystemPartyMenu_Tilemap[];
@@ -3464,7 +3473,7 @@ extern const u32 gBerryCrush_Crusher_Gfx[];
 extern const u16 gBerryCrush_Crusher_Pal[];
 extern const u32 gBerryCrush_TextWindows_Tilemap[];
 
-// Pokenav
+// PokéNav
 extern const u32 gPokenavMessageBox_Gfx[];
 extern const u32 gPokenavMessageBox_Tilemap[];
 extern const u16 gPokenavMessageBox_Pal[];
