@@ -4687,9 +4687,10 @@ static void CB2_SaveAndEndTrade(void)
     case 50:
         if (!InUnionRoom())
             IncrementGameStat(GAME_STAT_POKEMON_TRADES);
+        #ifndef FREE_BATTLE_TOWER_E_READER
         if (gWirelessCommType)
             MysteryGift_TryIncrementStat(CARD_STAT_NUM_TRADES, gLinkPlayers[GetMultiplayerId() ^ 1].trainerId);
-
+        #endif
         SetContinueGameWarpStatusToDynamicWarp();
         LinkFullSave_Init();
         gMain.state++;

@@ -4052,8 +4052,13 @@ static u32 GetMonHoldEffect(struct Pokemon *mon)
     u32 holdEffect;
     u32 item = GetMonData(mon, MON_DATA_HELD_ITEM);
 
+    
     if (item == ITEM_ENIGMA_BERRY_E_READER)
+        #ifndef FREE_ENIGMA_BERRY
         holdEffect = gSaveBlock1Ptr->enigmaBerry.holdEffect;
+        #else
+        holdEffect = 0;
+        #endif
     else
         holdEffect = ItemId_GetHoldEffect(item);
 
@@ -4102,7 +4107,17 @@ static void Cmd_getexp(void)
                 if (gBitTable[i] & sentInBits)
                     viaSentIn++;
 
-                holdEffect = GetMonHoldEffect(&gPlayerParty[i]);
+                u32 item = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
+
+                if (item == ITEM_ENIGMA_BERRY)
+                    #ifndef FREE_ENIGMA_BERRY
+                    holdEffect = gSaveBlock1Ptr->enigmaBerry.holdEffect;
+                    #else
+                    holdEffect = 0;
+                    #endif
+                else
+                    holdEffect = GetMonHoldEffect(&gPlayerParty[i]);
+                
                 if (holdEffect == HOLD_EFFECT_EXP_SHARE || IsGen6ExpShareEnabled())
                 {
                     expShareBits |= gBitTable[i];
@@ -4170,7 +4185,15 @@ static void Cmd_getexp(void)
         if (gBattleControllerExecFlags == 0)
         {
             bool32 wasSentOut = ((gBattleStruct->expSentInMons & gBitTable[*expMonId]) != 0);
-            holdEffect = GetMonHoldEffect(&gPlayerParty[*expMonId]);
+            u32 item = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
+            if (item == ITEM_ENIGMA_BERRY)
+                #ifndef FREE_ENIGMA_BERRY
+                holdEffect = gSaveBlock1Ptr->enigmaBerry.holdEffect;
+                #else
+                holdEffect = 0;
+                #endif
+            else 
+                holdEffect = GetMonHoldEffect(&gPlayerParty[*expMonId]);
 
             if ((holdEffect != HOLD_EFFECT_EXP_SHARE && !wasSentOut && !IsGen6ExpShareEnabled())
              || GetMonData(&gPlayerParty[*expMonId], MON_DATA_SPECIES_OR_EGG) == SPECIES_EGG)
