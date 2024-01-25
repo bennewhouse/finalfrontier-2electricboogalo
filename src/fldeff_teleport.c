@@ -8,7 +8,7 @@
 #include "constants/field_effects.h"
 
 static void FieldCallback_Teleport(void);
-static void StartTeleportFieldEffect(void);
+// static void StartTeleportFieldEffect(void); //qol_field_moves
 
 bool8 SetUpFieldMove_Teleport(void)
 {
@@ -37,7 +37,7 @@ bool8 FldEff_UseTeleport(void)
     return FALSE;
 }
 
-static void StartTeleportFieldEffect(void)
+void StartTeleportFieldEffect(void) //static
 {
     FieldEffectActiveListRemove(FLDEFF_USE_TELEPORT);
     FldEff_TeleportWarpOut();
