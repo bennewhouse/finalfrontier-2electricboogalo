@@ -826,11 +826,11 @@ void DrawMainBattleBackground(void)
                     LoadCompressedPalette(gBattleTerrainPalette_Rock_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 else if (gBattleTerrain == BATTLE_TERRAIN_SAND)
                     LoadCompressedPalette(gBattleTerrainPalette_Sand_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                else if (gBattleTerrain == BATTLE_TERRAIN_POND)
+                    LoadCompressedPalette(gBattleTerrainPalette_PondWater_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                else if (gBattleTerrain == BATTLE_TERRAIN_CAVE)
+                    LoadCompressedPalette(gBattleTerrainPalette_Cave, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP); //cave needs to be called as not map_type_indoor
             }
-            else if (gMapHeader.mapType == MAP_TYPE_UNDERGROUND && gBattleTerrain == BATTLE_TERRAIN_POND)
-                LoadCompressedPalette(gBattleTerrainPalette_PondWater_Cave, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
-            else if (gTimeOfDay == TIME_OF_DAY_NIGHT && gMapHeader.mapType != MAP_TYPE_UNDERGROUND && gBattleTerrain == BATTLE_TERRAIN_POND)
-                LoadCompressedPalette(gBattleTerrainPalette_PondWater_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             else
                 LoadCompressedPalette(sBattleTerrainTable[gBattleTerrain].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
@@ -1431,13 +1431,13 @@ bool8 LoadChosenBattleElement(u8 caseId)
                         LoadCompressedPalette(gBattleTerrainPalette_Rock_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                     else if (gBattleTerrain == BATTLE_TERRAIN_SAND)
                         LoadCompressedPalette(gBattleTerrainPalette_Sand_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    else if (gBattleTerrain == BATTLE_TERRAIN_POND)
+                        LoadCompressedPalette(gBattleTerrainPalette_PondWater_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    else if (gBattleTerrain == BATTLE_TERRAIN_CAVE)
+                        LoadCompressedPalette(gBattleTerrainPalette_Cave, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP); //cave needs to be called as not map_type_indoor
                 }
-                else if (gMapHeader.mapType == MAP_TYPE_UNDERGROUND && gBattleTerrain == BATTLE_TERRAIN_POND)
-                    LoadCompressedPalette(gBattleTerrainPalette_PondWater_Cave, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
-                else if (gTimeOfDay == TIME_OF_DAY_NIGHT && gMapHeader.mapType != MAP_TYPE_UNDERGROUND && gBattleTerrain == BATTLE_TERRAIN_POND)
-                    LoadCompressedPalette(gBattleTerrainPalette_PondWater_Night, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 else
-                    LoadCompressedPalette(sBattleTerrainTable[gBattleTerrain].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    LoadCompressedPalette(sBattleTerrainTable[gBattleTerrain].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP); //all daytime/default palettes
                 break;
             case MAP_BATTLE_SCENE_GYM:
                 LoadCompressedPalette(gBattleTerrainPalette_BuildingGym, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
