@@ -246,14 +246,14 @@ u32 UseSurf(u32 fieldMoveStatus)
 	HideMapNamePopUpWindow();
 	ForcePlayerToPerformMovementAction();
 	LockPlayerAndLoadMon();
-#ifdef QOL_NO_MESSAGING
-	FlagSet(FLAG_SYS_USE_SURF);
-#endif //QOL_NO_MESSAGING
+// #ifdef QOL_NO_MESSAGING
+// 	FlagSet(FLAG_SYS_USE_SURF);
+// #endif //QOL_NO_MESSAGING
 
 	if (FlagGet(FLAG_SYS_USE_SURF))
 		ScriptContext_SetupScript(EventScript_UseSurfFieldEffect);
 	else if(fieldMoveStatus == FIELD_MOVE_POKEMON)
-		ScriptContext_SetupScript(EventScript_UseSurfMove);
+		ScriptContext_SetupScript(EventScript_UseSurf); //UseSurfMove originally
 	else if(fieldMoveStatus == FIELD_MOVE_TOOL)
 		ScriptContext_SetupScript(EventScript_UseSurfTool);
 
