@@ -1670,4 +1670,10 @@ void ItemUseOnFieldCB_SweetScentTool(u8 taskId)
 }
 // End qol_field_moves
 
+void ItemUseOutOfBattle_Mints(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_Mints;
+    SetUpItemUseCallback(taskId);
+}
+
 #undef tUsingRegisteredKeyItem

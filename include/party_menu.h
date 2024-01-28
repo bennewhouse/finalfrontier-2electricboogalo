@@ -118,4 +118,6 @@ enum {
 };
 // End qol_field_moves
 
+void ItemUseCB_Mints(u8 taskId, TaskFunc task);
+
 #endif // GUARD_PARTY_MENU_H

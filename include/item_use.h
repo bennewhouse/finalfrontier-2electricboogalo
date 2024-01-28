@@ -64,5 +64,7 @@ void ItemUseOutOfBattle_DiveTool(u8);
 void ItemUseOutOfBattle_TeleportTool(u8);
 void ItemUseOutOfBattle_SweetScentTool(u8);
 
+void ItemUseOutOfBattle_Mints(u8 taskId);
+
 
 #endif // GUARD_ITEM_USE_H
