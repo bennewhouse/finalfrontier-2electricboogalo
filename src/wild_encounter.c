@@ -8,6 +8,7 @@
 #include "event_data.h"
 #include "safari_zone.h"
 #include "overworld.h"
+#include "rtc.h"
 #include "pokeblock.h"
 #include "battle_setup.h"
 #include "roamer.h"
@@ -355,7 +356,10 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon, u8 wildMonIn
 u16 GetCurrentMapWildMonHeaderId(void)
 {
     u16 i;
-
+    u8 timeOfDay; 
+    // updatedTime = GetTimeOfDay(); 
+    RtcCalcLocalTime();
+    timeOfDay = GetTimeOfDay(); 
     for (i = 0; ; i++)
     {
         const struct WildPokemonHeader *wildHeader = &gWildMonHeaders[i];
@@ -375,7 +379,14 @@ u16 GetCurrentMapWildMonHeaderId(void)
                 i += alteringCaveId;
             }
 
-            return i;
+            if (timeOfDay == gWildMonHeaders[i].timeOfDay)
+                return i;
+            else if (timeOfDay == gWildMonHeaders[i+1].timeOfDay)
+                return i+1; 
+            else
+                // If an encounter table doesn't exist for 
+                // the current time, use the default "day" one.
+               return i; 
         }
     }
 

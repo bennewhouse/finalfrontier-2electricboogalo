@@ -80,3 +80,4 @@ EventScript_UseTeleportTool::
 EventScript_CancelTeleportTool::
     releaseall
     end
+    
