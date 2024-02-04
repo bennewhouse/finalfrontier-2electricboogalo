@@ -803,8 +803,9 @@ const struct Item gItems[] =
         .description = sHPUpDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .fieldUseFunc = ItemUseOutOfBattle_Vitamins,
         .flingPower = 30,
+        .secondaryId = MON_DATA_HP_IV,
     },
 
     [ITEM_PROTEIN] =
@@ -814,8 +815,9 @@ const struct Item gItems[] =
         .description = sProteinDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .fieldUseFunc = ItemUseOutOfBattle_Vitamins,
         .flingPower = 30,
+        .secondaryId = MON_DATA_ATK_IV,
     },
 
     [ITEM_IRON] =
@@ -825,8 +827,9 @@ const struct Item gItems[] =
         .description = sIronDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .fieldUseFunc = ItemUseOutOfBattle_Vitamins,
         .flingPower = 30,
+        .secondaryId = MON_DATA_DEF_IV,
     },
 
     [ITEM_CALCIUM] =
@@ -836,8 +839,9 @@ const struct Item gItems[] =
         .description = sCalciumDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .fieldUseFunc = ItemUseOutOfBattle_Vitamins,
         .flingPower = 30,
+        .secondaryId = MON_DATA_SPATK_IV,
     },
 
     [ITEM_ZINC] =
@@ -847,8 +851,9 @@ const struct Item gItems[] =
         .description = sZincDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .fieldUseFunc = ItemUseOutOfBattle_Vitamins,
         .flingPower = 30,
+        .secondaryId = MON_DATA_SPDEF_IV,
     },
 
     [ITEM_CARBOS] =
@@ -858,8 +863,9 @@ const struct Item gItems[] =
         .description = sCarbosDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .fieldUseFunc = ItemUseOutOfBattle_Vitamins,
         .flingPower = 30,
+        .secondaryId = MON_DATA_SPEED_IV, 
     },
 
     [ITEM_PP_UP] =
