@@ -1253,60 +1253,65 @@ const struct Item gItems[] =
     {
         .name = _("Exp.Candy XS"),
         .price = 20,
-        .holdEffectParam = EXP_100,
+        //.holdEffectParam = EXP_100,
         .description = sExpCandyXSDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
         .flingPower = 30,
+        .secondaryId = 15,
     },
 
     [ITEM_EXP_CANDY_S] =
     {
         .name = _("Exp.Candy S"),
         .price = 240,
-        .holdEffectParam = EXP_800,
+        //.holdEffectParam = EXP_800,
         .description = sExpCandySDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
         .flingPower = 30,
+        .secondaryId = 25,
     },
 
     [ITEM_EXP_CANDY_M] =
     {
         .name = _("Exp.Candy M"),
         .price = 1000,
-        .holdEffectParam = EXP_3000,
+        //.holdEffectParam = EXP_3000,
         .description = sExpCandyMDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
         .flingPower = 30,
+        .secondaryId = 35,
     },
 
     [ITEM_EXP_CANDY_L] =
     {
         .name = _("Exp.Candy L"),
         .price = 3000,
-        .holdEffectParam = EXP_10000,
+        //.holdEffectParam = EXP_10000,
         .description = sExpCandyLDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
         .flingPower = 30,
+        .secondaryId = 50,
     },
 
     [ITEM_EXP_CANDY_XL] =
     {
         .name = _("Exp.Candy XL"),
         .price = 10000,
-        .holdEffectParam = EXP_30000,
+        //.holdEffectParam = EXP_30000,
         .description = sExpCandyXLDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
         .flingPower = 30,
+        .secondaryId = 70,
     },
 
     [ITEM_DYNAMAX_CANDY] =
