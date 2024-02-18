@@ -7780,13 +7780,15 @@ void ItemUseCB_Mints(u8 taskId, TaskFunc task)
 #define tIVTypeChange   data[6]
 
 static const u8 sText_AskVitamin[] = _("Would you like to feed {STR_VAR_1}\nthe {STR_VAR_2}?");
-static const u8 sText_AskVitaminTooMuch[] = _("Would you like to continue feeding\n{STR_VAR_1} the {STR_VAR_2}?");
-static const u8 sText_VitaminDone[] = _("{STR_VAR_1}'s {STR_VAR_2} became maxed!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_AskVitaminTooMuch[] = _("Are you sure you want to continue\nfeeding {STR_VAR_1} the {STR_VAR_2}?");
+static const u8 sText_VitaminDone[] = _("{STR_VAR_1}'s {STR_VAR_2} increased!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_VitaminDoneMax[] = _("{STR_VAR_1}'s {STR_VAR_2} became maxed!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_VitaminDoneTooMuch[] = _("{STR_VAR_1}'s {STR_VAR_2} became weaker\ninstead...{PAUSE_UNTIL_PRESS}");
 static void Task_Vitamins(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
     u8 maxIV = 31;
+    u8 penultimateIV = 30; 
     u8 zeroIV = 0;
     
     switch (tState)
@@ -7844,7 +7846,12 @@ static void Task_Vitamins(u8 taskId)
         {
             StringExpandPlaceholders(gStringVar4, sText_VitaminDoneTooMuch);
         }
-        else{
+        else if(tOldIV == penultimateIV)
+        {
+            StringExpandPlaceholders(gStringVar4, sText_VitaminDoneMax);
+        }
+        else
+        {
             StringExpandPlaceholders(gStringVar4, sText_VitaminDone);
         }
         StringCopy(gStringVar2, gStatNamePointers[tIVTypeChange]);
@@ -7857,12 +7864,16 @@ static void Task_Vitamins(u8 taskId)
             tState++;
         break;
     case 5:
-        if (tOldIV ==maxIV)
+        if (tOldIV == maxIV)
         {
             SetMonData(&gPlayerParty[tMonId], tIVTypeChange, &zeroIV);
         }
-        else{
+        else if (tOldIV == penultimateIV)
+        {
             SetMonData(&gPlayerParty[tMonId], tIVTypeChange, &maxIV);
+        }
+        else{
+            SetMonData(&gPlayerParty[tMonId], tIVTypeChange, &penultimateIV);
         }
 
         CalculateMonStats(&gPlayerParty[tMonId]);
