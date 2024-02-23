@@ -544,12 +544,12 @@ static void StatsChangeAnimation_Step2(u8 taskId)
     if (!sAnimStatsChangeData->aSharply)
     {
         gTasks[taskId].tTargetBlend = 10;
-        gTasks[taskId].tWaitTime = 20;
+        gTasks[taskId].tWaitTime = 4; //change this perhaps? 20 frames?
     }
     else
     {
         gTasks[taskId].tTargetBlend = 13;
-        gTasks[taskId].tWaitTime = 30;
+        gTasks[taskId].tWaitTime = 8;
     }
 
     gTasks[taskId].tAnimSpriteId1 = spriteId;

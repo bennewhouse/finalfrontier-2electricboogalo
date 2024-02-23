@@ -3693,7 +3693,6 @@ BattleScript_EffectStatUpAfterAtkCanceler::
 	ppreduce
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_StatUpEnd
 	jumpifbyte CMP_NOT_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_StatUpAttackAnim
-	pause B_WAIT_TIME_SHORT
 	goto BattleScript_StatUpPrintString
 BattleScript_StatUpAttackAnim::
 	attackanimation
@@ -3750,7 +3749,6 @@ BattleScript_StatDownFromAttackString:
 	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_StatDownEnd
 	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_StatDownDoAnim
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_FELL_EMPTY, BattleScript_StatDownEnd
-	pause B_WAIT_TIME_SHORT
 	goto BattleScript_StatDownPrintString
 BattleScript_StatDownDoAnim::
 	attackanimation
@@ -3884,7 +3882,6 @@ BattleScript_DoMultiHit::
 	decrementmultihit BattleScript_MultiHitLoop
 	goto BattleScript_MultiHitPrintStrings
 BattleScript_MultiHitNoMoreHits::
-	pause B_WAIT_TIME_SHORT
 BattleScript_MultiHitPrintStrings::
 	resultmessage
 	waitmessage B_WAIT_TIME_LONG
@@ -6371,7 +6368,7 @@ BattleScript_EffectCamouflage::
 BattleScript_FaintAttacker::
 	tryillusionoff BS_ATTACKER
 	playfaintcry BS_ATTACKER
-	pause B_WAIT_TIME_LONG
+	pause B_WAIT_TIME_SHORT
 	dofaintanimation BS_ATTACKER
 	printstring STRINGID_ATTACKERFAINTED
 	cleareffectsonfaint BS_ATTACKER
@@ -6383,7 +6380,7 @@ BattleScript_FaintAttacker::
 BattleScript_FaintTarget::
 	tryillusionoff BS_TARGET
 	playfaintcry BS_TARGET
-	pause B_WAIT_TIME_LONG
+	pause B_WAIT_TIME_SHORT
 	dofaintanimation BS_TARGET
 	printstring STRINGID_TARGETFAINTED
 	cleareffectsonfaint BS_TARGET
