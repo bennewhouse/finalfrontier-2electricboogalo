@@ -2691,10 +2691,13 @@ s32 MoveBattleBar(u8 battlerId, u8 healthboxSpriteId, u8 whichBar, u8 unused)
 
         if (currentBarValue == -1)
         {
+            s32 currHp = GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerId]], MON_DATA_HP);
+            s32 maxHp = GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerId]], MON_DATA_MAX_HP);
+
             gBattleSpritesDataPtr->battleBars[battlerId].currValue = 0;
-            // if ((i != 0 || instant) && whichBar == HEALTH_BAR)
-            //     UpdateHpTextInHealthbox(gHealthboxSpriteIds[battlerId], previousVal, HP_CURRENT);
-            // break;
+            if ((i != 0 || instant) && whichBar == HEALTH_BAR)
+                 UpdateHpTextInHealthbox(gHealthboxSpriteIds[battlerId], previousVal, currHp, maxHp);
+            break;
         }
     }
 
