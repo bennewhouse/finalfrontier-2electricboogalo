@@ -107,6 +107,7 @@ void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
 void ItemUseCB_Vitamins(u8 taskId, TaskFunc task);
 void ItemUseCB_EXPCandy(u8 taskId, TaskFunc task);
+void ItemUseCB_PokeBall(u8 taskId, TaskFunc task);
 
 // Start qol_field_moves
 // These are all moved from src/party_menu.c
