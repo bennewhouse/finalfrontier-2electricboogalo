@@ -542,28 +542,53 @@ static const u8 sRareCandyDesc[] = _(
 
 static const u8 sExpCandyXSDesc[] = _(
     "A delicate treat.\n"
-    "Sets a Pokemon's\n"
+    "Raises a Pokemon's\n"
     "level to 15.\n");
 
 static const u8 sExpCandySDesc[] = _(
     "A quaint treat.\n"
-    "Sets a Pokemon's\n"
-    "level to 25.\n");
+    "Raises a Pokemon's\n"
+    "level to 20.\n");
 
 static const u8 sExpCandyMDesc[] = _(
     "A tasty treat.\n"
-    "Sets a Pokemon's\n"
-    "level to 35.\n");
+    "Raises a Pokemon's\n"
+    "level to 25.\n");
 
 static const u8 sExpCandyLDesc[] = _(
     "A mighty treat.\n"
-    "Sets a Pokemon's\n"
-    "level to 50.\n");
+    "Raises a Pokemon's\n"
+    "level to 35.\n");
 
 static const u8 sExpCandyXLDesc[] = _(
     "An awesome treat.\n"
-    "Sets a Pokemon's\n"
-    "level to 70.\n");
+    "Raises a Pokemon's\n"
+    "level to 40.\n");
+
+static const u8 sExpSweetXSDesc[] = _(
+    "A delicate delight.\n"
+    "Raises a Pokemon's\n"
+    "level to 45.\n");
+
+static const u8 sExpSweetSDesc[] = _(
+    "A quaint delight.\n"
+    "Raises a Pokemon's\n"
+    "level to 50.\n");
+
+static const u8 sExpSweetMDesc[] = _(
+    "A tasty delight.\n"
+    "Raises a Pokemon's\n"
+    "level to 60.\n");
+
+static const u8 sExpSweetLDesc[] = _(
+    "A mighty delight.\n"
+    "Raises a Pokemon's\n"
+    "level to 75.\n");
+
+static const u8 sExpSweetXLDesc[] = _(
+    "An awesome delight.\n"
+    "Raises a Pokemon's\n"
+    "level to 100.\n");    
 
 static const u8 sDynamaxCandyDesc[] = _(
     "Raises the Dynamax\n"

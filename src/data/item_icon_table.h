@@ -116,6 +116,11 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_EXP_CANDY_M] = {gItemIcon_ExpCandyM, gItemIconPalette_ExpCandies},
     [ITEM_EXP_CANDY_L] = {gItemIcon_ExpCandyL, gItemIconPalette_ExpCandies},
     [ITEM_EXP_CANDY_XL] = {gItemIcon_ExpCandyXL, gItemIconPalette_ExpCandies},
+    [ITEM_EXP_SWEET_XS] = {gItemIcon_ExpCandyXS, gItemIconPalette_DynamaxCandy},
+    [ITEM_EXP_SWEET_S] = {gItemIcon_ExpCandyS, gItemIconPalette_DynamaxCandy},
+    [ITEM_EXP_SWEET_M] = {gItemIcon_ExpCandyM, gItemIconPalette_DynamaxCandy},
+    [ITEM_EXP_SWEET_L] = {gItemIcon_ExpCandyL, gItemIconPalette_DynamaxCandy},
+    [ITEM_EXP_SWEET_XL] = {gItemIcon_ExpCandyXL, gItemIconPalette_DynamaxCandy},
     [ITEM_DYNAMAX_CANDY] = {gItemIcon_DynamaxCandy, gItemIconPalette_DynamaxCandy},
     // Medicinal Flutes
     [ITEM_BLUE_FLUTE] = {gItemIcon_Flute, gItemIconPalette_BlueFlute},

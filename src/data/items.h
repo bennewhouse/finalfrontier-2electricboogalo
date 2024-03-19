@@ -1279,7 +1279,7 @@ const struct Item gItems[] =
     [ITEM_EXP_CANDY_XS] =
     {
         .name = _("Exp.Candy XS"),
-        .price = 20,
+        .price = 200,
         //.holdEffectParam = EXP_100,
         .description = sExpCandyXSDesc,
         .pocket = POCKET_ITEMS,
@@ -1292,9 +1292,22 @@ const struct Item gItems[] =
     [ITEM_EXP_CANDY_S] =
     {
         .name = _("Exp.Candy S"),
-        .price = 240,
+        .price = 200,
         //.holdEffectParam = EXP_800,
         .description = sExpCandySDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
+        .flingPower = 30,
+        .secondaryId = 20,
+    },
+
+    [ITEM_EXP_CANDY_M] =
+    {
+        .name = _("Exp.Candy M"),
+        .price = 200,
+        //.holdEffectParam = EXP_3000,
+        .description = sExpCandyMDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
@@ -1302,12 +1315,12 @@ const struct Item gItems[] =
         .secondaryId = 25,
     },
 
-    [ITEM_EXP_CANDY_M] =
+    [ITEM_EXP_CANDY_L] =
     {
-        .name = _("Exp.Candy M"),
-        .price = 1000,
-        //.holdEffectParam = EXP_3000,
-        .description = sExpCandyMDesc,
+        .name = _("Exp.Candy L"),
+        .price = 200,
+        //.holdEffectParam = EXP_10000,
+        .description = sExpCandyLDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
@@ -1315,12 +1328,38 @@ const struct Item gItems[] =
         .secondaryId = 35,
     },
 
-    [ITEM_EXP_CANDY_L] =
+    [ITEM_EXP_CANDY_XL] =
     {
-        .name = _("Exp.Candy L"),
-        .price = 3000,
-        //.holdEffectParam = EXP_10000,
-        .description = sExpCandyLDesc,
+        .name = _("Exp.Candy XL"),
+        .price = 200,
+        //.holdEffectParam = EXP_30000,
+        .description = sExpCandyXLDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
+        .flingPower = 30,
+        .secondaryId = 40,
+    },
+
+        [ITEM_EXP_SWEET_XS] =
+    {
+        .name = _("Exp.Sweet XS"),
+        .price = 200,
+        //.holdEffectParam = EXP_100,
+        .description = sExpSweetXSDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
+        .flingPower = 30,
+        .secondaryId = 45,
+    },
+
+    [ITEM_EXP_SWEET_S] =
+    {
+        .name = _("Exp.Sweet S"),
+        .price = 200,
+        //.holdEffectParam = EXP_800,
+        .description = sExpSweetSDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
@@ -1328,17 +1367,43 @@ const struct Item gItems[] =
         .secondaryId = 50,
     },
 
-    [ITEM_EXP_CANDY_XL] =
+    [ITEM_EXP_SWEET_M] =
     {
-        .name = _("Exp.Candy XL"),
-        .price = 10000,
-        //.holdEffectParam = EXP_30000,
-        .description = sExpCandyXLDesc,
+        .name = _("Exp.Sweet M"),
+        .price = 200,
+        //.holdEffectParam = EXP_3000,
+        .description = sExpSweetMDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
         .flingPower = 30,
-        .secondaryId = 70,
+        .secondaryId = 60,
+    },
+
+    [ITEM_EXP_SWEET_L] =
+    {
+        .name = _("Exp.Sweet L"),
+        .price = 200,
+        //.holdEffectParam = EXP_10000,
+        .description = sExpSweetLDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
+        .flingPower = 30,
+        .secondaryId = 75,
+    },
+
+    [ITEM_EXP_SWEET_XL] =
+    {
+        .name = _("Exp.Sweet XL"),
+        .price = 200,
+        //.holdEffectParam = EXP_30000,
+        .description = sExpSweetXLDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EXPCandy,
+        .flingPower = 30,
+        .secondaryId = 100,
     },
 
     [ITEM_DYNAMAX_CANDY] =
@@ -9987,6 +10052,8 @@ const struct Item gItems[] =
     },
 
     //End qol_field_moves
+
+
 
 
 };
