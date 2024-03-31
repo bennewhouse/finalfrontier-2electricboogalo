@@ -162,7 +162,7 @@
 //	Encounter	Modifiers				
 #define	ITEM_REPEL	119				
 #define	ITEM_SUPER_REPEL	120				
-#define	ITEM_MAX_REPEL	121				
+#define	ITEM_MAX_REPEL	121				 
 #define	ITEM_LURE	122				
 #define	ITEM_SUPER_LURE	123				
 #define	ITEM_MAX_LURE	124				

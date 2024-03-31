@@ -1,16 +1,40 @@
-# pokeemerald-expansion
+# YetAnotherEmeraldHack 
 
-## What is pokeemerald-expansion?
+## What is YetAnotherEmeraldHack?
 
-pokeemerald-expansion is a decomp hack base project based off pret's [pokeemerald](https://github.com/pret/pokeemerald) decompilation project. It's recommended that any new projects that plan on using it, to clone this repository instead of pret's vanilla repository, as we regurlarly incorporate pret's documentation changes. This is ***NOT*** a standalone romhack, and as such, most features will be unavailable and/or unbalanced if played as is.
+YetAnotherEmeraldHack is decomp rom base that primarily based off RHH's pokeemerald-expansion v1.7.3 https://github.com/rh-hideout/pokeemerald-expansion/. My goal was to create my own romhack, however, personal life will likely not allow for me to continue this endevour. But I still hope that someone else will be able to not let this go to waste! While not the most recent pokeemerald-expansion version, this should allow you to have up to some Gen 9 Mechanics or more easily merge in future versions. Some of the major additions that have been *mostly* tested for compatability include:
 
-If you use pokeemerald-expansion in your hack, please add RHH (Rom Hacking Hideout) to your credits list. Optionally, you can list the version used, so it can help players know what features to expect.
-You can phrase it as the following:
-```
-Based off RHH's pokeemerald-expansion v1.7.3 https://github.com/rh-hideout/pokeemerald-expansion/
-```
+Dexnav (Tied to FLAG_SYS_DEXNAV_GET)
+Nature Mints
+Expanded Saveblock - Ghoulsash
+Day Night Cycle - Merp, quocmanh94
+QOL Field Moves - psf, Pyredrid, NobodySociety, archie#5000
+IV/EV Screen - Buffel Salt
+Registered Items List (Use L + Select)
+Improved Options Menu - TheXaman
+Improving Pace of Battles - Mkol103
+Type Effectiveness - devolov/PokemonCrazy 
+Throbber Animation - Meejle and Anon822 
+Unreal RTC (Tied to 20x normal speed in play_time.c) - Anon822
+Wrapping Summary Screen - Zeturic
+Unreregisted Key Items Hiding - voloved
+Put Pokemon into new pokeballs - Lunos
+And many other various small tweaks and advice by Lunos, GriffR, AsparagusEduardo, ShinyDragonHunter, and others I may have accidentally forgotten. Please let me know if I forgot to mention you, as your work is greatly appreciated!
 
-## What features are included?
+## Unique Features
+Some of the unique features that I have worked on are:
+Vitamins IVs (Sets IVs to 30, 31, 0, then repeats. Thanks to Ghouslash as this is based off of the Nature Mints)
+Day Night Encounters (See Route 116)
+EXP Candies that instantly level up a pokemon to a set level (Also thanks to Ghoulslash Nature Mints)
+Battle Speed Up (Stat Drop, Held Item Usage, and Red Crit Text)
+
+Known Bug:
+Speeding up emulation will mess up HP/EXP bars if they are faster than normal in options menu. 
+
+
+## What does pokeemerald-expansion specifically include?
+
+
 - ***IMPORTANT*❗❗ Read through these to learn what features you can toggle**:
     - [Battle configurations](/include/config/battle.h)
     - [Pokémon configurations](/include/config/pokemon.h)
