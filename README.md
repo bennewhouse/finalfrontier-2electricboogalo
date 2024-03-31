@@ -4,22 +4,22 @@
 
 YetAnotherEmeraldHack is decomp rom base that primarily based off RHH's pokeemerald-expansion v1.7.3 https://github.com/rh-hideout/pokeemerald-expansion/. My goal was to create my own romhack, however, personal life will likely not allow for me to continue this endevour. But I still hope that someone else will be able to not let this go to waste! While not the most recent pokeemerald-expansion version, this should allow you to have up to some Gen 9 Mechanics or more easily merge in future versions. Some of the major additions that have been *mostly* tested for compatability include:
 
-Dexnav (Tied to FLAG_SYS_DEXNAV_GET)
-Nature Mints
-Expanded Saveblock - Ghoulsash
-Day Night Cycle - Merp, quocmanh94
-QOL Field Moves - psf, Pyredrid, NobodySociety, archie#5000
-IV/EV Screen - Buffel Salt
-Registered Items List (Use L + Select)
-Improved Options Menu - TheXaman
-Improving Pace of Battles - Mkol103
-Type Effectiveness - devolov/PokemonCrazy 
-Throbber Animation - Meejle and Anon822 
-Unreal RTC (Tied to 20x normal speed in play_time.c) - Anon822
-Wrapping Summary Screen - Zeturic
-Unreregisted Key Items Hiding - voloved
-Put Pokemon into new pokeballs - Lunos
-And many other various small tweaks and advice by Lunos, GriffR, AsparagusEduardo, ShinyDragonHunter, and others I may have accidentally forgotten. Please let me know if I forgot to mention you, as your work is greatly appreciated!
+- Dexnav (Tied to FLAG_SYS_DEXNAV_GET)
+- Nature Mints
+- Expanded Saveblock - Ghoulsash
+- Day Night Cycle - Merp, quocmanh94
+- QOL Field Moves - psf, Pyredrid, NobodySociety, archie#5000
+- IV/EV Screen - Buffel Salt
+- Registered Items List (Use L + Select)
+- Improved Options Menu - TheXaman
+- Improving Pace of Battles - Mkol103
+- Type Effectiveness - devolov/PokemonCrazy 
+- Throbber Animation - Meejle and Anon822 
+- Unreal RTC (Tied to 20x normal speed in play_time.c) - Anon822
+- Wrapping Summary Screen - Zeturic
+- Unreregisted Key Items Hiding - voloved
+- Put Pokemon into new pokeballs - Lunos
+- And many other various small tweaks and advice by Lunos, GriffR, AsparagusEduardo, ShinyDragonHunter, and others I may have accidentally forgotten. Please let me know if I forgot to mention you, as your work is greatly appreciated!
 
 ## Unique Features
 Some of the unique features that I have worked on are:
