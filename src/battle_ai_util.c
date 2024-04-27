@@ -834,6 +834,7 @@ s32 AI_CalcDamage(u32 move, u32 battlerAtk, u32 battlerDef, u8 *typeEffectivenes
     return dmg;
 }
 
+
 bool32 AI_IsDamagedByRecoil(u32 battler)
 {
     u32 ability = AI_DATA->abilities[battler];
