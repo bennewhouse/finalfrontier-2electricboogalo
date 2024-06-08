@@ -1512,7 +1512,10 @@ void CB1_Overworld(void)
         DoCB1_Overworld(gMain.newKeys, gMain.heldKeys);
 }
 
-#define TINT_NIGHT Q_8_8(0.456) | Q_8_8(0.456) << 8 | Q_8_8(0.615) << 16
+//https://github.com/citrusbolt/pokeheliodor/blob/master/src/day_night.c
+//#define TINT_NIGHT Q_8_8(0.456) | Q_8_8(0.456) << 8 | Q_8_8(0.615) << 16 //Merp Default - darkest
+//#define TINT_NIGHT Q_8_8(0.52) | Q_8_8(0.52) << 8 | Q_8_8(0.78) << 16 //Sierra Default
+#define TINT_NIGHT Q_8_8(0.60) | Q_8_8(0.60) << 8 | Q_8_8(0.95) << 16 //Lightest, keeping more blue
 
 const struct BlendSettings gTimeOfDayBlend[] =
 {
