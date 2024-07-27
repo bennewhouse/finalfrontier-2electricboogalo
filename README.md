@@ -19,6 +19,7 @@ YetAnotherEmeraldHack is decomp rom base that primarily based off RHH's pokeemer
 - Wrapping Summary Screen - Zeturic
 - Unreregisted Key Items Hiding - voloved
 - Put Pokemon into new pokeballs - Lunos
+- New animations for Gym Leaders, Elite 4, etc - Bivurum
 - And many other various small tweaks and advice by Lunos, GriffR, AsparagusEduardo, ShinyDragonHunter, and others I may have accidentally forgotten. Please let me know if I forgot to mention you, as your work is greatly appreciated!
 
 ## Unique Features
