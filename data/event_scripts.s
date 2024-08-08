@@ -1071,3 +1071,5 @@ EventScript_VsSeekerChargingDone::
     .include "data/scripts/dexnav.inc"
 	.include "data/scripts/qol_field_move_scripts.inc" @ qol_field_moves 
     
+
+	.include "data/maps/LittlerootTown_AssistantsHouse/scripts.inc"
