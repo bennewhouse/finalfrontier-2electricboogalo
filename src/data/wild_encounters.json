@@ -541,12 +541,12 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_HOPPIP"
+                "species": "SPECIES_LEDYBA"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_HOPPIP"
+                "species": "SPECIES_LEDYBA"
               },
               {
                 "min_level": 2,
@@ -695,12 +695,12 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_HOPPIP"
+                "species": "SPECIES_LEDYBA"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_HOPPIP"
+                "species": "SPECIES_LEDYBA"
               },
               {
                 "min_level": 2,
