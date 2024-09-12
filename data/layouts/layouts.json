@@ -14,7 +14,7 @@
     {
       "id": "LAYOUT_SLATEPORT_CITY",
       "name": "SlateportCity_Layout",
-      "width": 40,
+      "width": 46,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
@@ -244,7 +244,7 @@
     {
       "id": "LAYOUT_ROUTE109",
       "name": "Route109_Layout",
-      "width": 40,
+      "width": 44,
       "height": 63,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
