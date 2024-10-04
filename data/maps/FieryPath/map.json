@@ -220,10 +220,17 @@
     },
     {
       "x": 41,
-      "y": 16,
+      "y": 15,
       "elevation": 3,
       "dest_map": "MAP_ROUTE112",
       "dest_warp_id": "5"
+    },
+    {
+      "x": 6,
+      "y": 36,
+      "elevation": 3,
+      "dest_map": "MAP_FIREY_PATH_CONNECTION",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

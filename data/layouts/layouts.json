@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/OldaleTown_OldCouple/border.bin",
       "blockdata_filepath": "data/layouts/OldaleTown_OldCouple/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIREY_PATH_CONNECTION",
+      "name": "FireyPath_Connection_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/FireyPath_Connection/border.bin",
+      "blockdata_filepath": "data/layouts/FireyPath_Connection/map.bin"
     }
   ]
 }
