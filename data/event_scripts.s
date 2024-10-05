@@ -1077,3 +1077,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/OldaleTown_OldCouple/scripts.inc"
 
 	.include "data/maps/FireyPath_Connection/scripts.inc"
+
+	.include "data/maps/Rusturf_Connection1/scripts.inc"
+
+	.include "data/maps/Rusturf_Connnection2/scripts.inc"

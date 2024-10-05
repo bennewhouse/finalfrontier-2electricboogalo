@@ -432,7 +432,9 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "FireyPath_Connection"
+    "FireyPath_Connection",
+    "Rusturf_Connection1",
+    "Rusturf_Connnection2"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
