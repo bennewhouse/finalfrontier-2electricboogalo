@@ -67,14 +67,14 @@
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_LAVARIDGE_TOWN",
-      "dest_warp_id": "0"
+      "dest_warp_id": "6"
     },
     {
       "x": 9,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_RUSTURF_CONNNECTION2",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
