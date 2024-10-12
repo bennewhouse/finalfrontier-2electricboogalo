@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_FALLARBOR_TOWN",
-      "offset": 0,
+      "offset": -6,
       "direction": "left"
     },
     {
@@ -240,7 +240,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": -4,
+      "x": -6,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -253,8 +253,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": -3,
-      "y": 15,
+      "x": -5,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
