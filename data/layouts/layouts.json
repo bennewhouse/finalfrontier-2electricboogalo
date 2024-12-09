@@ -335,7 +335,7 @@
       "id": "LAYOUT_ROUTE118",
       "name": "Route118_Layout",
       "width": 80,
-      "height": 20,
+      "height": 32,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route118/border.bin",
@@ -385,7 +385,7 @@
       "id": "LAYOUT_ROUTE123",
       "name": "Route123_Layout",
       "width": 140,
-      "height": 20,
+      "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route123/border.bin",
@@ -4460,6 +4460,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Rusturf_Connnection2/border.bin",
       "blockdata_filepath": "data/layouts/Rusturf_Connnection2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1185",
+      "name": "Route1185_Layout",
+      "width": 30,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/Route1185/border.bin",
+      "blockdata_filepath": "data/layouts/Route1185/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_ROUTE118",
+      "name": "Underwater_Route118_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_Route118/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_Route118/map.bin"
     }
   ]
 }

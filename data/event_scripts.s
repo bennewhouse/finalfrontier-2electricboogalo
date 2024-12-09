@@ -1081,3 +1081,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Rusturf_Connection1/scripts.inc"
 
 	.include "data/maps/Rusturf_Connnection2/scripts.inc"
+
+	.include "data/maps/Route1185/scripts.inc"
+
+	.include "data/maps/Underwater_Route118/scripts.inc"

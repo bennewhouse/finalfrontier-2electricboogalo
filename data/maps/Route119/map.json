@@ -15,13 +15,18 @@
   "connections": [
     {
       "map": "MAP_ROUTE118",
-      "offset": -40,
+      "offset": -41,
       "direction": "down"
     },
     {
       "map": "MAP_FORTREE_CITY",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE1185",
+      "offset": 108,
+      "direction": "left"
     }
   ],
   "object_events": [

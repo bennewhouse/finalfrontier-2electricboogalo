@@ -1,0 +1,44 @@
+{
+  "id": "MAP_ROUTE1185",
+  "name": "Route1185",
+  "layout": "LAYOUT_ROUTE1185",
+  "music": "MUS_ROUTE118",
+  "region_map_section": "MAPSEC_ROUTE_118",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE118",
+      "offset": -10,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE119",
+      "offset": -108,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_UNDERWATER_ROUTE118",
+      "offset": 0,
+      "direction": "dive"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}
