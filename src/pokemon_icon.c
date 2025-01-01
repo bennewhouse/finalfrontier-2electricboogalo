@@ -8,6 +8,7 @@
 #include "data.h"
 
 #define POKE_ICON_BASE_PAL_TAG 56000
+#include "constants/pokemon_icon.h" //denav merge
 
 struct MonIconSpriteTemplate
 {
