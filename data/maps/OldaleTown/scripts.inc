@@ -20,13 +20,13 @@ OldaleTown_EventScript_SetOldaleState::
 	return
 
 OldaleTown_EventScript_BlockWestEntrance::
-	setobjectxyperm LOCALID_FOOTPRINTS_MAN, 1, 11
+	setobjectxyperm LOCALID_FOOTPRINTS_MAN, 1, 15
 	setobjectmovementtype LOCALID_FOOTPRINTS_MAN, MOVEMENT_TYPE_FACE_LEFT
 	return
 
 OldaleTown_EventScript_MoveMartEmployee::
 	setobjectxyperm LOCALID_MART_EMPLOYEE, 13, 18
-	setobjectmovementtype LOCALID_MART_EMPLOYEE, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype LOCALID_MART_EMPLOYEE, MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT
 	return
 
 OldaleTown_EventScript_TownSign::
@@ -50,6 +50,7 @@ OldaleTown_EventScript_MartEmployee::
 	case DIR_SOUTH, OldaleTown_EventScript_GoToMartSouth
 	case DIR_NORTH, OldaleTown_EventScript_GoToMartNorth
 	case DIR_EAST, OldaleTown_EventScript_GoToMartEast
+	case DIR_WEST, OldaleTown_EventScript_GoToMartWest
 	end
 
 OldaleTown_EventScript_GoToMartSouth::
@@ -69,6 +70,13 @@ OldaleTown_EventScript_GoToMartNorth::
 OldaleTown_EventScript_GoToMartEast::
 	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_PlayerEast
 	applymovement LOCALID_MART_EMPLOYEE, OldaleTown_Movement_EmployeeEast
+	waitmovement 0
+	goto OldaleTown_EventScript_ExplainPokemonMart
+	end
+
+OldaleTown_EventScript_GoToMartWest::
+	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_PlayerWest
+	applymovement LOCALID_MART_EMPLOYEE, OldaleTown_Movement_EmployeeWest
 	waitmovement 0
 	goto OldaleTown_EventScript_ExplainPokemonMart
 	end
@@ -94,6 +102,17 @@ OldaleTown_EventScript_BagIsFull::
 	release
 	end
 
+OldaleTown_Movement_EmployeeWest:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_in_place_faster_down
+	step_end
+
 OldaleTown_Movement_EmployeeEast:
 	walk_up
 	walk_up
@@ -104,6 +123,7 @@ OldaleTown_Movement_EmployeeEast:
 	walk_up
 	walk_in_place_faster_down
 	step_end
+
 
 OldaleTown_Movement_EmployeeSouth:
 	walk_left
@@ -143,6 +163,16 @@ OldaleTown_Movement_Unknown1:
 	walk_up
 	delay_8
 	walk_in_place_faster_down
+	step_end
+
+OldaleTown_Movement_PlayerWest:
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
 	step_end
 
 OldaleTown_Movement_PlayerEast:
