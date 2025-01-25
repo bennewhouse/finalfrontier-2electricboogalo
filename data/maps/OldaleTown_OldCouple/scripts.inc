@@ -1,3 +1,5 @@
+.set LOCALID_OLD_MAN, 1
+
 OldaleTown_OldCouple_MapScripts::
 	.byte 0
 
@@ -7,6 +9,17 @@ OldaleTown_OldCouple_EventScript_Woman::
 
 OldaleTown_OldCouple_EventScript_Man::
 	msgbox OldaleTown_OldCouple_Text_TimeFlows, MSGBOX_NPC
+	applymovement LOCALID_OLD_MAN, Common_Movement_FaceOriginalDirection
+	end
+
+OldaleTown_OldCouple_EventScript_Pikachu::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PIKACHU, CRY_MODE_NORMAL
+	msgbox OldaleTown_OldCouple_Text_Text_Pikachu, MSGBOX_DEFAULT
+	waitmoncry
+	release
 	end
 
 OldaleTown_OldCouple_Text_HaveACookie::
@@ -18,10 +31,8 @@ OldaleTown_OldCouple_Text_HaveACookie::
 OldaleTown_OldCouple_Text_TimeFlows::
 	.string "I like spend all my time looking\n"
 	.string "out on the bay.\p"
-	.string "Time flows through everything and\n"
-	.string "it does not appear that its slowing\l"
-	.string "down any time soon.\p"
 	.string "....\l"
-	.string "At least the bay still provides\n"
-	.string "me comfort.$"
+	.string "It's a peaceful life.$"
 
+OldaleTown_OldCouple_Text_Text_Pikachu::
+	.string "Chu chu!$"

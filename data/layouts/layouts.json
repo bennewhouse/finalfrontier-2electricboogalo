@@ -4424,7 +4424,7 @@
     {
       "id": "LAYOUT_OLDALE_TOWN_OLD_COUPLE",
       "name": "OldaleTown_OldCouple_Layout",
-      "width": 10,
+      "width": 14,
       "height": 10,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
