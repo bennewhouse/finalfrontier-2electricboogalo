@@ -857,10 +857,12 @@ if (I_VS_SEEKER_CHARGING != 0)
     ResetFieldTasksArgs();
     RunOnResumeMapScript();
 
-    if (gMapHeader.regionMapSectionId != MAPSEC_BATTLE_FRONTIER
-     || gMapHeader.regionMapSectionId != MAPSEC_ROUTE_118
-     || gMapHeader.regionMapSectionId != sLastMapSectionId)
+    if (gMapHeader.regionMapSectionId != sLastMapSectionId)
+    { 
         ShowMapNamePopup();
+    }
+
+    //gMapHeader.regionMapSectionId != MAPSEC_BATTLE_FRONTIER ||        
 }
 
 static void LoadMapFromWarp(bool32 a1)
