@@ -80,7 +80,7 @@
       "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_LEFT_UP",
-      "movement_range_x": 4,
+      "movement_range_x": 3,
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
@@ -180,7 +180,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 43,
+      "x": 69,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -232,14 +232,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
-      "x": 56,
+      "x": 57,
       "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route118_EventScript_Chester",
       "flag": "0"
     },
@@ -271,8 +271,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_STEVEN",
-      "x": 59,
-      "y": 8,
+      "x": 44,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -310,7 +310,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 44,
+      "x": 70,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -320,6 +320,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_12"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 62,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_13"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 62,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_14"
     }
   ],
   "warp_events": [
@@ -341,8 +367,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 58,
-      "y": 13,
+      "x": 43,
+      "y": 24,
       "elevation": 3,
       "var": "VAR_ROUTE118_STATE",
       "var_value": "0",
@@ -350,8 +376,8 @@
     },
     {
       "type": "trigger",
-      "x": 59,
-      "y": 13,
+      "x": 44,
+      "y": 24,
       "elevation": 3,
       "var": "VAR_ROUTE118_STATE",
       "var_value": "0",
@@ -359,8 +385,8 @@
     },
     {
       "type": "trigger",
-      "x": 60,
-      "y": 13,
+      "x": 45,
+      "y": 24,
       "elevation": 3,
       "var": "VAR_ROUTE118_STATE",
       "var_value": "0",
