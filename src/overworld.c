@@ -858,6 +858,7 @@ if (I_VS_SEEKER_CHARGING != 0)
     RunOnResumeMapScript();
 
     if (gMapHeader.regionMapSectionId != MAPSEC_BATTLE_FRONTIER
+     || gMapHeader.regionMapSectionId != MAPSEC_ROUTE_118
      || gMapHeader.regionMapSectionId != sLastMapSectionId)
         ShowMapNamePopup();
 }
