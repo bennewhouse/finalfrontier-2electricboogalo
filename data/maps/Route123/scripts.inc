@@ -170,6 +170,18 @@ Route123_EventScript_RematchFernando::
 	msgbox Route123_Text_FernandoPostRematch, MSGBOX_AUTOCLOSE
 	end
 
+Route123_EventScript_Magama_Grunt_1::
+	msgbox Route123_Text_Magama_Grunt_1, MSGBOX_NPC
+	end
+
+Route123_EventScript_Magama_Grunt_2::
+	msgbox Route123_Text_Magama_Grunt_2, MSGBOX_NPC
+	end
+
+Route123_EventScript_Magama_Grunt_3::
+	msgbox Route123_Text_Magama_Grunt_3, MSGBOX_NPC
+	end
+
 Route123_Text_LoveGrassMonsHaveAny:
 	.string "I love GRASS-type POKéMON!\p"
 	.string "Do you have any GRASS-type POKéMON?$"
@@ -196,3 +208,14 @@ Route123_Text_RouteSignMtPyre:
 Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
 
+Route123_Text_Magama_Grunt_1:
+	.string "Nobody is allowed to go to\n"
+	.string "MT. PYRE while the boss is there!$"
+
+Route123_Text_Magama_Grunt_2:
+	.string "Yes! Nobody can get in the\n"
+	.string "way of TEAM MAGMA!$"
+
+Route123_Text_Magama_Grunt_3:
+	.string "I don't why I'm here...\n"
+	.string "I just wanted a job.$"
